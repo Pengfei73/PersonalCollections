@@ -1,4 +1,8 @@
-// Bubble Sort
+/**
+ * Bubble Sort
+ * Time Complexity: average O(n^2), best O(n), worst O(n^2)
+ * Space Complexity: O(1)
+ */
 function bubbleSort(arr: number[]): number[] {
     let n: number = arr.length;
     for (let i = 0; i < n - 1; i++) {
@@ -11,7 +15,12 @@ function bubbleSort(arr: number[]): number[] {
     return arr;
 }
 
-// Selection Sort
+/**
+ * Selection Sort
+ * Time Complexity: average O(n^2), best O(n^2), worst O(n^2)
+ * Space Complexity: O(1)
+ */
+
 function selectionSort(arr: number[]): number[] {
     let n = arr.length;
     for (let i = 0; i < n - 1; i++) {
@@ -29,6 +38,8 @@ function selectionSort(arr: number[]): number[] {
 }
 
 // Merge Sort
+// Time Complexity: average O(nlogn), best O(nlogn), worst O(nlogn)
+// Space Complexity: O(n)
 function mergeSort(arr: number[]): number[] {
     if (arr.length <= 1) {
         return arr;
@@ -60,6 +71,8 @@ function merge(left: number[], right: number[]): number[] {
 }
 
 // Quick Sort
+// Time Complexity: average O(nlogn), best O(nlogn), worst O(n^2)
+// Space Complexity: O(logn)
 function quickSort(arr: number[]): number[] {
     if (arr.length <= 1) {
         return arr;
@@ -73,6 +86,8 @@ function quickSort(arr: number[]): number[] {
 }
 
 // Heap Sort
+// Time Complexity: average O(nlogn), best O(nlogn), worst O(nlogn)
+// Space Complexity: O(1)
 function heapSort(arr: number[]): number[] {
     let n: number = arr.length;
 
