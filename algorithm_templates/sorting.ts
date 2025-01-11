@@ -20,6 +20,7 @@ function bubbleSort(arr: number[]): number[] {
  * Time Complexity: average O(n^2), best O(n^2), worst O(n^2)
  * Space Complexity: O(1)
  */
+
 function selectionSort(arr: number[]): number[] {
     let n = arr.length;
     for (let i = 0; i < n - 1; i++) {
